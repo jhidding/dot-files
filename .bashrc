@@ -12,14 +12,7 @@ fi
 export PATH="${HOME}/.local/bin:${PATH}"
 
 # load GHC preferences
-if [ -f ${HOME}/.ghcup/env ]; then
-        . ${HOME}/.ghcup/env
-fi
-
-# load Nix
-if [ -f ${HOME}/.nix-profile/etc/profile.d/nix.sh ]; then
-        . ${HOME}/.nix-profile/etc/profile.d/nix.sh
-fi
+. ${HOME}/.ghcup/env
 
 # configure NPM
 export NPM_PACKAGES="${HOME}/.local/pkg/npm"
