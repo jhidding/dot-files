@@ -11,7 +11,7 @@ default:
 store: vim-packages.toml
 	cp $(patsubst %,$(HOME)/%,$(rcfiles)) .
 
-vim-packages.toml: $(HOME)/.vim
+vim-packages.toml: $(wildcard $(HOME)/.vim/pack/*)
 	./scripts/list-vim-packages.sh > vim-packages.toml
 
 install: $(targets)
