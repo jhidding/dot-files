@@ -17,22 +17,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
 let mapleader = ","
-nnoremap <leader>t :call ToggleNetrw() <CR>
-
-function! ToggleNetrw()
-let i = bufnr("$")
-    let wasOpen = 0
-    while (i >= 1)
-        if (getbufvar(i, "&filetype") == "netrw")
-            silent exe "bwipeout " . i
-            let wasOpen = 1
-        endif
-        let i-=1
-    endwhile
-    if !wasOpen
-        silent Lexplore
-    endif
-endfunction
+nnoremap <leader>t :NERDTreeToggle <CR>
 
 " Line wrap mode
 imap <silent> <Down> <C-o>gj
