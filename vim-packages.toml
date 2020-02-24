@@ -6,6 +6,7 @@ VOoM = "git@github.com:vim-voom/VOoM.git"
 [language-support]
 elm-vim = "git@github.com:ElmCast/elm-vim.git"
 haskell-vim = "git@github.com:neovimhaskell/haskell-vim.git"
+julia-vim = "git@github.com:JuliaEditorSupport/julia-vim.git"
 vim-pandoc-syntax = "git@github.com:vim-pandoc/vim-pandoc-syntax.git"
 vim-toml = "git@github.com:cespare/vim-toml.git"
 
