@@ -1,7 +1,11 @@
+set cursorline
 syntax on
-colorscheme gruvbox
+set number
+set termguicolors
+
+colorscheme gruvbox-material
 set background=dark
-" set conceallevel=0
+set conceallevel=0
 
 " Disable tabs
 set expandtab
@@ -17,7 +21,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
 let mapleader = ","
-nnoremap <leader>t :NERDTreeToggle <CR>
+nnoremap <leader>f :NERDTreeToggle <CR>
 
 " Line wrap mode
 imap <silent> <Down> <C-o>gj
@@ -34,3 +38,5 @@ augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
 
+let g:pandoc#syntax#codeblocks#embeds#langs = ["haskell", "python", "sqlite", "scheme", "cpp", "julia"]
+let g:pandoc#syntax#use_definition_lists = 0

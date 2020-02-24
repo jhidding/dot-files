@@ -3,6 +3,9 @@ editorconfig-vim = "git@github.com:editorconfig/editorconfig-vim.git"
 nerdtree = "git@github.com:scrooloose/nerdtree.git"
 VOoM = "git@github.com:vim-voom/VOoM.git"
 
+[language-server-protocol]
+ale = "git@github.com:dense-analysis/ale.git"
+
 [language-support]
 elm-vim = "git@github.com:ElmCast/elm-vim.git"
 haskell-vim = "git@github.com:neovimhaskell/haskell-vim.git"
@@ -12,4 +15,5 @@ vim-toml = "git@github.com:cespare/vim-toml.git"
 
 [themes]
 gruvbox = "git@github.com:morhetz/gruvbox.git"
+gruvbox-material = "git@github.com:gruvbox-material/vim.git"
 
